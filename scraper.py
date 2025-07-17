@@ -5,6 +5,7 @@ import logging
 from datetime import datetime
 from telethon import TelegramClient
 import base64 
+import pandas  as pd
 # ==============================================================================
 # CONFIGURATION
 # ==============================================================================

@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_telegram_messages
+    description: Flattened telegram messages extracted from raw JSON
+    columns:
+      - name: message_id
+        description: Unique identifier for each message
+        tests:
+          - not_null
+          - unique
+      # - name: channel
+      #   description: Telegram channel name
+      #   tests:
+      #     - not_null
+      # - name: date
+      #   description: Post date
+      #   tests:
+      #     - not_null   
+      - name: message_text
+        description: Telegram product message
+        tests:
+          - not_null   
+      - name: channel_id
+        description: Telegram channel id
+        tests:
+          - not_null                                 
+      # - name: views
+      #   description: Product views
+      #   tests:
+      #     - not_null         

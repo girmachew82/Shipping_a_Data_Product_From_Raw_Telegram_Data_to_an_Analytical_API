@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_image_detections
+    description: YOLOv8 object detections from Telegram message images
+    columns:
+      - name: message_id
+        description: FK to fct_messages
+        tests:
+          - not_null
+          - relationships:
+              to: ref('fct_messages')
+              field: message_id
+      - name: detected_object_class
+        tests:
+          - not_null
+      - name: confidence_score
+        tests:
+          - not_null

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging       # <-- schema name in PostgreSQL
+    database: telegram_data  # <--  DB name 
+    tables:
+      - name: fct_image_detections
+        description: "Raw YOLOv8 image detection results"

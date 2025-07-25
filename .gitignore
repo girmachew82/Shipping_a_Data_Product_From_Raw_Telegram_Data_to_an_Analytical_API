@@ -12,3 +12,5 @@ BASE_IMAGE_DIR
 logs
 my_session.session
 yo
+__pycache__
+.tmp_dagster_home_x6xhyc_p
